@@ -24,7 +24,7 @@ public class CommObject {
     /**
      * Url address of data provider endpoint
      */
-    public static final String DATA_PROVIDER_URL = "http://p-laboratories.aspone.cz/RazeniProvider.ashx";
+    public static final String DATA_PROVIDER_URL = "http://www.polenius-laboratories.cz/RazeniProvider.ashx";
 
     /**
      * Get Train by its number

@@ -1,69 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-    <TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="ŽelPage řazení"
-    android:textSize="30sp"
-    android:paddingBottom="5sp"
-    android:paddingTop="5sp"
-    android:gravity="center"
-    />
-    <LinearLayout android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-        <ListView android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content" 
-                     android:id="@+id/trainsselector"
-                     android:visibility="gone">
-                        
+    android:padding="3dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp"
+        android:text="ŽelPage řazení"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/trainsselector"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
         </ListView>
-        <EditText android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content" 
-                    android:id="@+id/trainnumtb" 
-                    android:hint="Zadejte číslo vlaku"                   
-                    android:imeOptions="actionDone"
-                    android:inputType="number"
-                   />
-                    
-        <ScrollView android:layout_width="fill_parent"   android:layout_height="fill_parent">
-            <LinearLayout android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"  
-    >
-                <LinearLayout  android:layout_width="fill_parent"
-    android:layout_height="wrap_content" android:gravity="center">
+
+        <EditText
+            android:id="@+id/trainnumtb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zadejte číslo vlaku"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
                     <ProgressBar
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:visibility="gone"
-         style="@android:style/Widget.ProgressBar.Large"
-         android:layout_marginRight="5dp" android:id="@+id/progress" 
-         android:paddingTop="10sp"/>
+                        android:id="@+id/progress"
+                        style="@android:style/Widget.ProgressBar.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:paddingTop="10sp"
+                        android:visibility="gone" />
                 </LinearLayout>
-                <TextView android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  android:id="@+id/label"  android:gravity="center"                     
-                     android:textSize="20sp"
-                     android:textStyle="bold"
-                    android:paddingTop="10sp"  android:paddingLeft="5sp" />
-                <TextView android:layout_width="fill_parent"  android:text="Trasa"
-                    android:layout_height="wrap_content"     android:id="@+id/deparatureslabel" android:visibility="invisible"
-                    android:paddingTop="5sp" android:textStyle="bold" android:paddingLeft="5sp" />
-                <TextView android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  android:id="@+id/deparatures"  android:paddingLeft="5sp"  
-                   />
-                <TextView android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  android:id="@+id/couples" android:paddingLeft="5sp"  />
-                <TextView android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  android:id="@+id/notes"   
-                    android:paddingTop="5sp" android:paddingLeft="5sp" />
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="10sp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deparatureslabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="5sp"
+                    android:text="Trasa"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/deparatures"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5sp" />
+
+                <TextView
+                    android:id="@+id/couples"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5sp" />
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="5sp" />
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>   
-</LinearLayout>
+    </LinearLayout>
 
+</LinearLayout>
