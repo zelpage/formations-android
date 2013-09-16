@@ -1,2 +1,8 @@
 bin/
 nbandroid/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+local.properties
