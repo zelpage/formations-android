@@ -6,7 +6,6 @@ import java.util.List;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -40,7 +39,7 @@ public class CommObject {
         
         int traincount = response.getInt("MatchCount");
         if (traincount == 1){
-            result.add(Train.FromJson(response.getJSONObject("MatchingTrain")));
+            result.add(Train.Companion.fromJson(response.getJSONObject("MatchingTrain")));
             return  result;
         }else if (traincount == 0){
             return result;

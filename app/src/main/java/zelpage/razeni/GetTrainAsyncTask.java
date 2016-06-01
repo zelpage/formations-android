@@ -3,6 +3,8 @@ package zelpage.razeni;
 import java.util.ArrayList;
 import java.util.List;
 
+import zelpage.razeni.CommObject;
+import zelpage.razeni.R;
 import zelpage.razeni.bo.Couple;
 import zelpage.razeni.bo.Train;
 import zelpage.razeni.bo.Vehicle;
@@ -68,7 +70,7 @@ public class GetTrainAsyncTask extends AsyncTask<String, Void, List<Train>> {
 					.findViewById(R.id.couples);
 			TextView deparatures = (TextView) this.parent
 					.findViewById(R.id.deparatures);
-			this.parent.findViewById(R.id.deparatureslabel).setVisibility(0);
+			this.parent.findViewById(R.id.deparatureslabel).setVisibility(View.VISIBLE);
 			TextView notes = (TextView) this.parent.findViewById(R.id.notes);
 
 			if (this.trainResult.getName().compareTo("") == 0) {
@@ -119,7 +121,7 @@ public class GetTrainAsyncTask extends AsyncTask<String, Void, List<Train>> {
 			notes.setText(nText);
 
 			nText = "";
-			for (String singleNote : this.trainResult.getDeparatures()) {
+			for (String singleNote : this.trainResult.getDepartures()) {
 				nText += singleNote + "\n";
 			}
 			deparatures.setText(nText);
