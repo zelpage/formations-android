@@ -19,7 +19,6 @@ class MainActivity : Activity(), AnkoLogger {
 	private lateinit var backgroundThread : GetTrainAsyncTask
 	private lateinit var restoredTrain : Train
 
-	/** Called when the activity is first created.  */
 	public override fun onCreate(savedInstanceState : Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.main)

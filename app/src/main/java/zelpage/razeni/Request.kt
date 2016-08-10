@@ -3,9 +3,6 @@ package zelpage.razeni
 import org.json.JSONException
 import org.json.JSONObject
 
-/**
- * BO for razeni query
- */
 data class Request(
 	var trainNumberQuery: String? = null) {
 

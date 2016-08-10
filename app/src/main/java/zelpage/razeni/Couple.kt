@@ -2,15 +2,9 @@ package zelpage.razeni
 
 import java.io.Serializable
 import java.util.ArrayList
-import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
-import zelpage.razeni.Vehicle
 
-/**
- * Couple Business object
- * @author jindrichbr
- */
 data class Couple (
 	var fromStation: String? = null,
 	var toStation: String? = null,
@@ -18,12 +12,6 @@ data class Couple (
 
 	companion object {
 
-		/**
-		 * Creates new object from json representation
-		 * @param json json object
-		 * *
-		 * @return java object
-		 */
 		@Throws(JSONException::class)
 		fun fromJson(json : JSONObject) : Couple {
 			val c = Couple()

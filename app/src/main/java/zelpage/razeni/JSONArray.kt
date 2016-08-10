@@ -1,7 +1,6 @@
 package zelpage.razeni
 
 import org.json.JSONArray
-import zelpage.razeni.Couple
 import java.util.ArrayList
 
 fun JSONArray.toCoupleList() : ArrayList<Couple> {

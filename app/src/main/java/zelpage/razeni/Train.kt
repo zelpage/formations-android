@@ -3,9 +3,6 @@ package zelpage.razeni
 import java.io.Serializable
 import org.json.JSONException
 import org.json.JSONObject
-import zelpage.razeni.toCoupleList
-import zelpage.razeni.toStringList
-import zelpage.razeni.Couple
 
 data class Train(
 	var name : String? = null,
@@ -29,6 +26,6 @@ data class Train(
 
 	}
 
-	override fun toString() = category + " " + number + " " + name
+	override fun toString() = "$category $number $name"
 
 }

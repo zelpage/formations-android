@@ -4,8 +4,6 @@ import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.json.JSONArray
 import org.json.JSONObject
-import zelpage.razeni.Request
-import zelpage.razeni.Train
 import java.net.HttpURLConnection
 import java.net.URL
 import java.nio.charset.StandardCharsets
