@@ -3,10 +3,6 @@ package zelpage.razeni;
 import java.util.ArrayList;
 import java.util.List;
 
-import zelpage.razeni.bo.Couple;
-import zelpage.razeni.bo.Train;
-import zelpage.razeni.bo.Vehicle;
-
 import android.os.AsyncTask;
 import android.text.Html;
 import android.view.View;

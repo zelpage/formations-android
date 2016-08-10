@@ -1,4 +1,4 @@
-package zelpage.razeni.bo
+package zelpage.razeni
 
 import org.json.JSONObject
 import java.io.Serializable

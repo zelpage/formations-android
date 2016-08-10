@@ -1,10 +1,11 @@
-package zelpage.razeni.bo
+package zelpage.razeni
 
 import java.io.Serializable
 import java.util.ArrayList
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
+import zelpage.razeni.Vehicle
 
 /**
  * Couple Business object
