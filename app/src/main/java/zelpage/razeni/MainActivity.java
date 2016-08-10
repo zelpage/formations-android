@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
                             return true;
                         }
 
-                        //Train t = CommObject.getTrain(rt.getText().toString());
+                        //Train t = TrainFormations.getTrain(rt.getText().toString());
                         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                         imm.hideSoftInputFromWindow(rt.getWindowToken(), 0);
 

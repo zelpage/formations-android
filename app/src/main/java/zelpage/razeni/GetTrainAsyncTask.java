@@ -3,13 +3,10 @@ package zelpage.razeni;
 import java.util.ArrayList;
 import java.util.List;
 
-import zelpage.razeni.CommObject;
-import zelpage.razeni.R;
 import zelpage.razeni.bo.Couple;
 import zelpage.razeni.bo.Train;
 import zelpage.razeni.bo.Vehicle;
-import android.content.Intent;
-import android.net.Uri;
+
 import android.os.AsyncTask;
 import android.text.Html;
 import android.view.View;
@@ -28,17 +25,20 @@ public class GetTrainAsyncTask extends AsyncTask<String, Void, List<Train>> {
 
 	private View parent;
 	private Train trainResult;
+	private TrainFormations api;
 
 	public GetTrainAsyncTask(View p, Train t) {
 		this.parent = p;
 		this.trainResult = t;
+
+		this.api = new TrainFormations();
 	}
 
 	@Override
 	protected List<Train> doInBackground(String... trainNumber) {
 		if (this.trainResult == null) {
 			try {
-				List<Train> trains = CommObject.getTrain(trainNumber[0]);
+				List<Train> trains = api.getTrain(trainNumber[0]);
 				return trains;
 
 			} catch (Exception ex) {
