@@ -14,7 +14,7 @@ fun JSONArray.toCoupleList() : ArrayList<Couple> {
 
 fun JSONArray.toStringList() : ArrayList<String> {
 	val list = ArrayList<String>()
-	for (index in 0..length() - 1) {
+	for (index in 0.until(length())) {
 		list.add(optString(index))
 	}
 	return list
